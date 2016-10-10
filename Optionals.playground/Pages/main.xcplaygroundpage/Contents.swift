@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//optional String
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+//no value
 
 
 
@@ -44,7 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Ron"
+//optional String
 
 
 
@@ -56,7 +57,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
 
 
 
@@ -67,8 +68,13 @@ var petName: String?
 // write your code here
 
 
+if petName != nil {
+    print(petName)
+}
 
-
+if petName == nil {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let name = petName {
+    print(name)
+}
 
 
 
@@ -90,7 +98,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,6 +111,11 @@ var anotherPetName: String?
 // write your code here
 
 
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else if let anotherOne = anotherPetName {
+    print(anotherOne)
+}
 
 
 
@@ -113,8 +128,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let string: String?
+string = "wassup"
 
-
+print(string)
 
 
 
@@ -126,7 +143,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let anotherString: String? = nil
+anotherPetName = "hello"
 
 
 
