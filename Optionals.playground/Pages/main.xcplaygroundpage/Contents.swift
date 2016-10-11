@@ -18,12 +18,10 @@ var pet = "turtle 🐢"
 
 
 
-
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
 
 
 
@@ -43,7 +41,7 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
+petName = "String"
 
 
 
@@ -55,7 +53,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,7 +64,12 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print("\(petName)")
+}
+else {
+    print("There is no petname")
+}
 
 
 
@@ -86,10 +89,12 @@ var petName: String?
 /*: question8
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
  */
-var anotherPetName: String?
+var anotherPetName: String? = "The value of another PetName is nil"
 // write your code here
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}
 
 
 
