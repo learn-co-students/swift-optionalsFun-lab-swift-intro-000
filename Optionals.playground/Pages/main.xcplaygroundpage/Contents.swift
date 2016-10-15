@@ -16,7 +16,7 @@ var pet = "turtle 🐢"
 
 
 
-
+//String
 
 
 /*: question2
@@ -26,14 +26,14 @@ var petName: String?
 
 
 
-
+//optional string
 
 
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//nil
 
 
 
@@ -45,7 +45,8 @@ var petName: String?
 // write your code here
 
 
-
+petName = "Lil Turt"
+//Optional String
 
 
 
@@ -55,9 +56,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
-
-
+//Optional("Lil Turt")
 
 
 
@@ -66,7 +67,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print("\(petName)")
+} else {
+    print("There's no pet name")
+}
 
 
 
@@ -76,7 +81,9 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let anyPetName = petName {
+    print(anyPetName)
+}
 
 
 
@@ -89,7 +96,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil.")
+}
 
 
 
@@ -100,7 +109,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,7 +126,10 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let string: String?
+string = "some value"
+print(string)
+//print optional string
 
 
 
@@ -126,6 +142,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherString: String? = nil
+//anotherString = "someOtherValue"
+//It gives a compile error. The constant already have a value of nil, changing the value will give an error.
 
 
 
