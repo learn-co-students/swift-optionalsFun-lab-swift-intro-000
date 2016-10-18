@@ -77,6 +77,7 @@ print(thisIsOptional)
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
-//let thisIsOptionaNil = nil
-//thisIsOptionalNil = "Poop"
+let thisIsOptionalNil: String? = nil
+thisIsOptionalNil = "Poop"
+// constant error. immutability.
 //: Checkout the solution branch, git co solution and come back to this spot to see a link to the solution
