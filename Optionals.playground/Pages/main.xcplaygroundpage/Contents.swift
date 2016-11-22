@@ -141,10 +141,10 @@ print(someoneCool)
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
-let somethingDelicious: String?
+let somethingDelicious: String? = nil
 somethingDelicious = "Ramen"
 
-//value gets changed to "Ramen"
+//Error occurs on the second line. You can't chnage value of a constant.
 
 
 
