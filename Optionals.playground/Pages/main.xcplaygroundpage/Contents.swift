@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//String
 
 
 
@@ -23,7 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
+// Optional(String)
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// Nil
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "AName"
 
 
 
@@ -54,7 +54,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -66,7 +66,9 @@ var petName: String?
  */
 // write your code here
 
-
+if (petName == nil) {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +79,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName!)
 
 
 
@@ -88,8 +90,9 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
-
-
+if (anotherPetName == nil) {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +103,12 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if (anotherPetName == nil) {
+    print("The value of anotherPetName is nil")
+}
+else {
+    print("\(anotherPetName!) of `anotherPetName`")
+}
 
 
 
@@ -112,10 +120,10 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
+let thirdPetName: String?
+thirdPetName = "thirdName"
 
-
-
-
+print(thirdPetName ?? "No Name")
 
 
 
@@ -126,7 +134,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let fourPetName : String? = nil
+//fourPetName = "fourName"
 
 
 
