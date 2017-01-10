@@ -14,6 +14,7 @@
  */
 var pet = "turtle 🐢"
 
+//It is String (Option click on pet)
 
 
 
@@ -24,6 +25,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
+//String? (Optional)
 
 
 
@@ -34,9 +36,9 @@ var petName: String?
  */
 
 
+print(petName)
 
-
-
+//Value is nil
 
 
 /*: question4
@@ -45,9 +47,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Toto"
 
-
-
+//Still an optional String
 
 
 /*: question5
@@ -57,9 +59,9 @@ var petName: String?
 
 
 
+print(petName)
 
-
-
+//Optional("Toto")
 
 /*: question6
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
@@ -104,7 +106,13 @@ var anotherPetName: String?
 
 
 
+if let(anotherPetName) = anotherPetName {
+    print("anotherPetName is \(anotherPetName)")
+} else {
+    print("anotherPetName has no value :(")
+}
 
+//No value
 
 
 
@@ -114,10 +122,13 @@ var anotherPetName: String?
 // write your code here
 
 
+let _constant_optional : String?
 
+_constant_optional = "Hey"
 
+print(_constant_optional)
 
-
+//It is still an optional String
 
 
 
@@ -126,9 +137,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+let _constant_optional2 : String?
+_constant_optional2 = nil
+_constant_optional2 = "Hey hey hey"
 
 
-
+//Can only initialize constant optional once.
 
 
 
