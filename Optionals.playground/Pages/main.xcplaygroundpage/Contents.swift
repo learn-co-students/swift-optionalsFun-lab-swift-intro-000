@@ -45,6 +45,7 @@ var petName: String?
 // write your code here
 
 
+petName = "Leeroy"
 
 
 
@@ -56,6 +57,7 @@ var petName: String?
 // write your code here
 
 
+print(petName)
 
 
 
@@ -68,7 +70,11 @@ var petName: String?
 
 
 
-
+if let hasName = petName {
+    print(hasName)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -89,7 +95,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName != nil {
+    
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
