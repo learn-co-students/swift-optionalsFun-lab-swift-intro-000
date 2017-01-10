@@ -12,6 +12,8 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
+import UIKit
+import PlaygroundSupport
 var pet = "turtle 🐢"
 
 
@@ -33,16 +35,13 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
-
-
+petName
 
 
 
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
-// write your code here
 
 
 
@@ -54,7 +53,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -65,7 +64,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +80,11 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -90,6 +97,11 @@ var anotherPetName: String?
 // write your code here
 
 
+if let petName = petName {
+    print(petName)
+} else {
+    print("T")
+}
 
 
 
