@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+print("String")
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+print("String?")
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+print("nil")
 
 
 
@@ -45,7 +45,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Rocco"
 
+print("String?")
 
 
 
@@ -56,7 +58,9 @@ var petName: String?
 // write your code here
 
 
+print(petName)
 
+print("Optional()")
 
 
 
@@ -67,7 +71,13 @@ var petName: String?
 // write your code here
 
 
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name")
+}
 
+print("optional('Rocco')")
 
 
 
@@ -78,7 +88,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petname = petName {
+    print(petname)
+}
 
 
 
@@ -90,7 +102,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -102,6 +118,15 @@ var anotherPetName: String?
 
 
 
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else {
+    if let anotherpetname = anotherPetName{
+        print(anotherPetName)
+    }
+}
+
+print("I expect to see 'anotherPetName has no value'")
 
 
 
@@ -114,7 +139,11 @@ var anotherPetName: String?
 // write your code here
 
 
+let bball: String?
 
+bball = "Spalding"
+
+print(bball)
 
 
 
@@ -128,7 +157,13 @@ var anotherPetName: String?
 
 
 
+let baseball: String? = nil
 
+baseball = "wilson"
+
+
+
+print("It gives an error becasue it is nonmutable")
 
 
 
