@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//pet is a string
 
 
 
@@ -23,7 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
+//petName is a String Optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//value is currently 'nil'
 
 
 
@@ -44,20 +44,20 @@ var petName: String?
  */
 // write your code here
 
+petName = pet
 
+//petName is still an optional because it can be assigned a value of nil as below. Whereas 'pet' throws an error when assigned nil
 
+petName = nil
 
-
-
+petName = "Frankie 🐶"
 
 /*: question5
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
 
-
-
-
+print (petName)
 
 
 
@@ -67,8 +67,8 @@ var petName: String?
 // write your code here
 
 
-
-
+if let petName = petName { print (petName) }
+else { print ("There is no pet name")}
 
 
 
@@ -77,7 +77,7 @@ var petName: String?
  */
 // write your code here
 
-
+print (petName!)
 
 
 
@@ -89,7 +89,8 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if let n = anotherPetName {print (n)}
+else {print ("The value of anotherPetName is nil")}
 
 
 
@@ -100,7 +101,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if anotherPetName == nil { print ("anotherPetName has no value") }
+else { print (anotherPetName!) }
 
 
 
@@ -113,22 +115,32 @@ var anotherPetName: String?
  */
 // write your code here
 
+let middleName: String?
 
+middleName = "Russel"
 
+print (middleName)
 
+//has the optional text
 
+print (middleName!)
 
+// wait so if it's an optional i can assign it values even though it's a constant?
 
+middleName = "Antigony"
 
+// how about
+
+middleName = nil  // okay so then what's the point of let here... ?
 
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
 
+let goodCop: String? = nil
 
-
-
+goodCop = "Gerson" // it's an error!
 
 
 
