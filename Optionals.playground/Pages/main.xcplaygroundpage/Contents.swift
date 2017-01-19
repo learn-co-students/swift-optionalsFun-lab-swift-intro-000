@@ -14,6 +14,8 @@
  */
 var pet = "turtle 🐢"
 
+print(type(of: pet))
+// String
 
 
 
@@ -24,8 +26,8 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
-
+print(type(of: petName))
+// Optional<String>
 
 
 
@@ -33,8 +35,9 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
+print(petName)
 
-
+// nil
 
 
 
@@ -44,8 +47,10 @@ var petName: String?
  */
 // write your code here
 
+petName = "Tom"
 
-
+print(type(of:petName))
+// Optional<String>
 
 
 
@@ -55,6 +60,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
+
+// Optional("Tom")
 
 
 
@@ -66,7 +74,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +89,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +103,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,8 +118,23 @@ var anotherPetName: String?
  */
 // write your code here
 
+if anotherPetName != nil {
+    if let anotherPetName = anotherPetName {
+        print(anotherPetName)
+    }
+} else {
+    print("anotherPetName has no value")
+}
 
-
+// assign value
+anotherPetName = "Dan"
+if anotherPetName != nil {
+    if let anotherPetName = anotherPetName {
+        print(anotherPetName)
+    }
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -112,9 +145,11 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
+let personName:String?
 
+personName = "Rob"
 
-
+print(personName)
 
 
 
@@ -125,8 +160,10 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
+let another:String? = nil
+//another = "test"
 
-
+// can not assign value to let
 
 
 
