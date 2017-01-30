@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//string
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//optional string
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//nil
 
 
 
@@ -45,8 +45,8 @@ var petName: String?
 // write your code here
 
 
-
-
+petName = "lucy"
+//optional string
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -67,7 +67,11 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -78,7 +82,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName!)
 
 
 
@@ -89,7 +93,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +106,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if anotherPetName == nil {
+    print("anoterhPetName has no value")
+} else {
+    print(anotherPetName!)
+}
 
 
 
@@ -116,7 +126,9 @@ var anotherPetName: String?
 
 
 
-
+let me: String?
+me = "mike"
+print(me)
 
 
 
@@ -126,7 +138,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let you: String? = nil
+you = "you"
 
 
 
