@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//Type String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//Type String? or String optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//nil
 
 
 
@@ -44,8 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
-
+petName = "John"
+// Still a optional String
 
 
 
@@ -55,8 +55,8 @@ var petName: String?
  */
 // write your code here
 
-
-
+print(petName)
+//Expected to see Optional("John") because the type is still optional
 
 
 
@@ -66,9 +66,16 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    
+    print(petName)
+    
+} else {
+    
+    print("There is no pet name")
+}
 
-
-
+//Because we have not unwrapped the optional, petName will still display as optional type
 
 
 
@@ -78,7 +85,10 @@ var petName: String?
 // write your code here
 
 
-
+if let petNameUnwrapped = petName {
+    
+    print(petNameUnwrapped)
+}
 
 
 
@@ -89,7 +99,10 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,9 +114,16 @@ var anotherPetName: String?
 // write your code here
 
 
+if let anotherPetNameUnwrapped = anotherPetName {
+    
+    print(anotherPetNameUnwrapped)
+    
+} else {
+    
+    print("anotherPetName has no value")
+}
 
-
-
+//anotherPetName was never assigned a value so i expect second statement to display.
 
 
 
@@ -114,7 +134,13 @@ var anotherPetName: String?
 // write your code here
 
 
+let name:String?
 
+name = "Marc"
+
+print(name)
+
+//The value is stil optional
 
 
 
@@ -126,10 +152,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let petType:String? = nil
+//petType = "greyhound"
 
-
-
-
+// Doesnt work because you cannot change value on a let constant
 
 
 
