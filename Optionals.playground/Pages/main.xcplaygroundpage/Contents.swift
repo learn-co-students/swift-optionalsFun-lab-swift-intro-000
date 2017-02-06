@@ -14,6 +14,8 @@
  */
 var pet = "turtle 🐢"
 
+//String
+
 
 
 
@@ -24,6 +26,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
+//Optional
 
 
 
@@ -32,18 +35,13 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
-
-
-
-
-
-
+//nil
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
+petName = "Elephant"
+//optional("Elephant")
 
 
 
@@ -54,7 +52,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName ?? <#default value#>)
 
 
 
@@ -65,7 +63,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -77,7 +79,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let newPet = petName {
+    print(newPet)
+}
 
 
 
@@ -89,7 +93,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,7 +105,11 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else {
+    print(anotherPetName)
+}
 
 
 
@@ -113,7 +123,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let kingPet :String?
+kingPet = "Kingo"
+print(kingPet)
 
 
 
@@ -125,7 +137,8 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
+var kiingPet :String? = nil
+kiingPet = "feel"
 
 
 
