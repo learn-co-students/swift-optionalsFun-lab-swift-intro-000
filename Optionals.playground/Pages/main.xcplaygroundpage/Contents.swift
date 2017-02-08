@@ -5,7 +5,9 @@
  
  ### Readings associated with this lab
  
- * [Optionals](https://github.com/learn-co-curriculum/swift-optionals-readme)
+ * [Optionals](https://github.com/learn-co-curriculum/swift-optionals-readme
+ 
+
  
 
  */
@@ -15,7 +17,7 @@
 var pet = "turtle 🐢"
 
 
-
+// string
 
 
 
@@ -25,7 +27,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+// optional string
 
 
 
@@ -34,6 +36,7 @@ var petName: String?
  */
 
 
+// value nil
 
 
 
@@ -45,7 +48,10 @@ var petName: String?
 // write your code here
 
 
-
+if let friendsPet = petName {
+    print("My friend's pet is \(friendsPet)")
+    print("petName is still an Optional! \(petName)")
+}
 
 
 
@@ -55,7 +61,7 @@ var petName: String?
  */
 // write your code here
 
-
+// prints "petName is still an Optional! Optional("Scooter")"
 
 
 
@@ -65,6 +71,12 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
+
+if petName != nil {
+    print ("My friend's pet is \(petName)")
+} else {
+    print("My friend doesn't have a pet :(")
+}
 
 
 
@@ -78,7 +90,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petName = petName {
+    print("My friend's pet is \(petName)")
+}
 
 
 
@@ -90,7 +104,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print("The value of anotherPetName is \(anotherPetName)")
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +118,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let name = anotherPetName {
+    print(name)
+} else {
+   print("anotherPetName has no value")
+}
 
 
 
@@ -113,7 +135,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let myPetName: String?
+myPetName = "Fluffy"
+print(myPetName)
 
 
 
@@ -126,7 +150,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let otherPet: String? = nil
+otherPet = "Beebo"
+// There is an error.
 
 
 
