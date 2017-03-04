@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//String
 
 
 
@@ -23,8 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
-
+//Optional
 
 
 
@@ -32,7 +31,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+petName
 
 
 
@@ -43,6 +42,7 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
+petName = "Turtle"
 
 
 
@@ -54,7 +54,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -66,7 +66,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName == nil {
+    print("There is no pet name.")
+} else {
+    print(petName)
+}
 
 
 
@@ -76,7 +80,9 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,6 +95,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if let anotherPetName = anotherPetName {
+    print("The value of anotherPetName is \(anotherPetName)")
+}
 
 
 
@@ -100,6 +109,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -112,7 +126,9 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
-
+let heresPet: String?
+heresPet = "Dog"
+print(heresPet)
 
 
 
@@ -125,7 +141,8 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
+let theresPet: String? = nil
+theresPet = "Dog"
 
 
 
