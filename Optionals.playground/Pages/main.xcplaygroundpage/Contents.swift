@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+// Answer: String
 
 
 
@@ -23,8 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
-
+// Answer: Optional String
 
 
 
@@ -32,7 +31,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+// Answer: nil
 
 
 
@@ -43,8 +42,8 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
-
+petName = "Fluffy"
+// Answer: Optional String
 
 
 
@@ -54,7 +53,8 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
+// Optional("Fluffy")
 
 
 
@@ -66,7 +66,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -76,7 +80,9 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,6 +95,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,7 +108,11 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
+if  anotherPetName == nil {
+    print("anotherPetName has no value")
+} else if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}
 
 
 
@@ -113,8 +126,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let const: String?
+const = "Yes!"
+print(const)
 
-
+// printed the "box" with content
 
 
 
@@ -125,8 +141,9 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
-
+let const2: String? = nil
+const2 = "No go"
+// Cannot assign value to constant.
 
 
 
