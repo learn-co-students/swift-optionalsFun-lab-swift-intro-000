@@ -14,6 +14,7 @@
  */
 var pet = "turtle 🐢"
 
+// String
 
 
 
@@ -24,7 +25,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//Optional String
 
 
 
@@ -33,7 +34,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// nil
 
 
 
@@ -42,10 +43,10 @@ var petName: String?
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
-// write your code here
 
+petName = "Miranda"
 
-
+//Optional String
 
 
 
@@ -53,10 +54,8 @@ var petName: String?
 /*: question5
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
-// write your code here
 
-
-
+print(petName)
 
 
 
@@ -64,10 +63,12 @@ var petName: String?
 /*: question6
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
-// write your code here
 
-
-
+if petName != nil{
+    print(petName)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -75,10 +76,10 @@ var petName: String?
 /*: question7
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
-// write your code here
 
-
-
+if let name = petName{
+    print(name)
+}
 
 
 
@@ -89,7 +90,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil{
+    print("The value of anotherPatName is nil")
+}
 
 
 
@@ -98,11 +101,13 @@ var anotherPetName: String?
 /*: question9
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
-// write your code here
 
 
-
-
+if anotherPetName == nil{
+    print("The value of anotherPatName is nil")
+} else if let anotherName = anotherPetName{
+    print(anotherName)
+}
 
 
 
@@ -111,22 +116,19 @@ var anotherPetName: String?
 /*: question10
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
-// write your code here
 
-
-
-
-
-
+let a : String?
+a = "abc"
+print(a)
 
 
 
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
-// write your code here
 
-
+let b : String? = nil
+b = "def"
 
 
 
