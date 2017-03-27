@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// A string optional
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+// Petname is currently nil
 
 
 
@@ -45,7 +45,7 @@ var petName: String?
 // write your code here
 
 
-
+petName = "Clifford"
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,6 +66,11 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    print(petName)
+}   else {
+    print("No name")
+}
 
 
 
@@ -78,7 +83,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName!)
 
 
 
@@ -89,10 +94,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
-
-
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 /*: question9
@@ -100,7 +104,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if anotherPetName == nil {
+    print("anotherPetName has no value.")
+}   else {
+    print(anotherPetName!)
+}
 
 
 
@@ -113,11 +121,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let sampleOptional: String?
 
+sampleOptional = "Starling"
 
-
-
-
+print(sampleOptional)
 
 
 
@@ -126,12 +134,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherSampleOptional: String? = nil
 
-
-
-
-
-
+anotherSampleOptional = "Sample string"
+)
 
 
 //: Checkout the solution [here](https://github.com/learn-co-curriculum/swift-optionalsFun-lab/blob/solution/Optionals.playground/Pages/solution.xcplaygroundpage/Contents.swift)
