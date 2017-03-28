@@ -14,8 +14,9 @@
  */
 var pet = "turtle 🐢"
 
+// String
 
-
+//: `pet` is a variable of type `String`.
 
 
 
@@ -24,18 +25,19 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
+// Optional String
 
-
-
+//: `petName` is a variable of type `String?`, which can be read as "optional `String`".
+//: var petName: String?
 
 
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
+// Nil (nothing)
 
-
-
+//: `petName` has the value `nil`.
 
 
 
@@ -45,9 +47,11 @@ var petName: String?
 // write your code here
 
 
+petName = "Charlie"
 
+//String optional
 
-
+//: `petName` is still of type `String?` (optional `String`). Even though you assigned a value to it, it retains its type.
 
 
 /*: question5
@@ -56,9 +60,11 @@ var petName: String?
 // write your code here
 
 
+print(petName)
 
+// Optional("Charlie")
 
-
+//: You should see something like **Optional("Scooter the Turtle")** in the console.
 
 
 /*: question6
@@ -66,10 +72,22 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil{
+    print(petName)
+}
+else
+{
+    print("There is no pet name.")
+}
 
+//"Optional("Charlie")
 
-
-
+////: ### Question 6
+//if petName != nil {
+//    print(petName)
+//} else {
+//    print("There is no pet name.")
+//}
 
 
 /*: question7
@@ -77,8 +95,14 @@ var petName: String?
  */
 // write your code here
 
+if let petName = petName{
+    print(petName)
+}
 
-
+////: ### Question 7
+//if let petName = petName {
+//    print(petName)
+//}
 
 
 
@@ -89,9 +113,26 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if anotherPetName != nil{
+    print(anotherPetName)
+}
+else
+{
+    print("The value of anotherPetName is nil")
+}
 
-
-
+////: ### Question 8
+//var anotherPetName: String?
+//if anotherPetName == nil {
+//    print("The value of anotherPetName is nil")
+//}
+//
+//// You could also put the print() statement in an else branch:
+//if anotherPetName != nil {
+//    print("The value of anotherPetName is \(anotherPetName)")
+//} else {
+//    print("The value of anotherPetName is nil")
+//}
 
 
 
@@ -100,9 +141,21 @@ var anotherPetName: String?
  */
 // write your code here
 
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}
+else
+{
+ print("anotherPetName has no value")
+}
 
 
-
+////: ### Question 9
+//if let name = anotherPetName {
+//    print(name)
+//} else {
+//    print("anotherPetName is has no value")
+//}
 
 
 
@@ -113,11 +166,15 @@ var anotherPetName: String?
  */
 // write your code here
 
+let item: String?
+item = "Car"
+print(item)
 
 
-
-
-
+////: ### Question 10
+//let myPetName: String?
+//myPetName = "Sparkles 🐩"
+//print(myPetName)
 
 
 
@@ -126,10 +183,16 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherItem: String? = nil
+anotherItem = "Bike"
+print(anotherItem)
 
 
-
-
+////: ### Question 11
+//let somePet: String? = nil
+//somePet = "kitten 🐈"
+////: You will get an error on the second line. `somePet` is a _constant_ and it is set to `nil` immediately. You cannot change a constant's value after it has been assigned.
+//
 
 
 
