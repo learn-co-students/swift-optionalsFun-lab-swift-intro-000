@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//The type of the variable `pet` is String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// The type of the variable `petName` is optional String
 
 
 
@@ -33,9 +33,9 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
+print(petName)
 
-
-
+// The value of `petName` is nil
 
 
 
@@ -44,10 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
-
-
-
+petName = "Jayce"
 
 
 /*: question5
@@ -56,8 +53,7 @@ var petName: String?
 // write your code here
 
 
-
-
+print(petName)
 
 
 
@@ -66,11 +62,11 @@ var petName: String?
  */
 // write your code here
 
-
-
-
-
-
+if petName != nil {
+	print(petName)
+} else {
+	print("There is no pet name.")
+}
 
 /*: question7
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
@@ -78,10 +74,9 @@ var petName: String?
 // write your code here
 
 
-
-
-
-
+if let name = petName {
+	print(name)
+}
 
 /*: question8
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
@@ -89,11 +84,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
-
-
-
-
+if anotherPetName == nil {
+	print("The value of anotherPetName is nil")
+}
 
 /*: question9
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
@@ -101,35 +94,30 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
-
-
-
-
+if let anotherName = anotherPetName {
+	print(anotherName)
+} else {
+	print("anotherPetName has no value")
+}
 
 /*: question10
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
 
+let someConstant: String?
+someConstant = "fdsa"
 
-
-
-
-
-
-
+print(someConstant)
 
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
 
+let nilConstant: String? = nil
 
-
-
-
+nilConstant = "gfds"
 
 
 
