@@ -13,8 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
-
+// String
 
 
 
@@ -23,6 +22,8 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
+
+// optional String
 
 
 
@@ -34,7 +35,7 @@ var petName: String?
  */
 
 
-
+// nil
 
 
 
@@ -42,10 +43,10 @@ var petName: String?
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
-// write your code here
+// write your code here  it is still optional String
 
 
-
+petName = "Lovly"
 
 
 
@@ -53,10 +54,11 @@ var petName: String?
 /*: question5
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
-// write your code here
+// write your code here  Optional("Lovly")
 
 
 
+print(petName)
 
 
 
@@ -66,7 +68,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -78,7 +84,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +97,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if  anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -102,7 +114,11 @@ var anotherPetName: String?
 
 
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -115,6 +131,9 @@ var anotherPetName: String?
 
 
 
+let constant: String?
+constant = "value"
+print(constant)
 
 
 
@@ -127,6 +146,9 @@ var anotherPetName: String?
 // write your code here
 
 
+let anotherConstant: String? = nil
+
+anotherConstant = "another Value"
 
 
 
