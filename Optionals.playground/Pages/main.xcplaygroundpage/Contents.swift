@@ -11,6 +11,7 @@
  */
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
+ => String
  */
 var pet = "turtle 🐢"
 
@@ -21,6 +22,7 @@ var pet = "turtle 🐢"
 
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
+ => Optional String
  */
 var petName: String?
 
@@ -31,6 +33,7 @@ var petName: String?
 
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
+ => nil
  */
 
 
@@ -41,9 +44,10 @@ var petName: String?
 
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
+ => Optional String
  */
 // write your code here
-
+petName = "Tommy"
 
 
 
@@ -52,10 +56,11 @@ var petName: String?
 
 /*: question5
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
+ => Optional("Tommy")
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -65,10 +70,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
-
-
-
+if (petName != nil) {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let name = petName {
+    print(name)
+}
 
 
 
@@ -89,7 +97,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,10 +110,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
-
-
+if let name = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,11 +124,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let optStr : String?
+optStr = "Add Value"
 
-
-
-
-
+print(optStr)
 
 
 
@@ -127,10 +137,8 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
-
-
+let anotherOptStr : String? = nil
+anotherOptStr = "new Value"
 
 
 
