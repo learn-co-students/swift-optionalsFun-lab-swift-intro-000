@@ -12,7 +12,8 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet: String = "turtle 🐢"
+
 
 
 
@@ -33,7 +34,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// nil
 
 
 
@@ -45,7 +46,7 @@ var petName: String?
 // write your code here
 
 
-
+petName = "Shot"
 
 
 
@@ -56,7 +57,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
 
 
 
@@ -66,7 +67,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +82,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +96,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,7 +110,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else {
+    print(anotherPetName!)
+}
 
 
 
@@ -114,7 +127,10 @@ var anotherPetName: String?
 // write your code here
 
 
+let optionalString: String?
+optionalString = "new value"
 
+print(optionalString)
 
 
 
@@ -127,6 +143,9 @@ var anotherPetName: String?
 // write your code here
 
 
+let anotherOptionalString: String? = nil
+
+// anotherOptionalString = "new value" - can't change a constant if it already has a value
 
 
 
