@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// Optional String
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+// nil
 
 
 
@@ -45,8 +45,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Mausi"
 
-
+//Still optional String
 
 
 
@@ -55,7 +56,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -67,7 +68,11 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +82,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +96,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +109,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let name = anotherPetName {
+    print(name)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,7 +126,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let const: String?
+const = "test"
+print(const)
 
 
 
@@ -128,7 +143,8 @@ var anotherPetName: String?
 
 
 
-
+let const2: String? = nil
+const2 = "test" // causes Error
 
 
 
