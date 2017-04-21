@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+//String
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+//Optional String aka String?
 
 
 
@@ -34,6 +34,7 @@ var petName: String?
  */
 
 
+//nil
 
 
 
@@ -44,7 +45,8 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Brian"
+// still String?
 
 
 
@@ -55,7 +57,8 @@ var petName: String?
  */
 // write your code here
 
-
+print (petName)
+//Optional("Brian")
 
 
 
@@ -66,8 +69,12 @@ var petName: String?
  */
 // write your code here
 
-
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
+//Optional("Brian")
 
 
 
@@ -77,7 +84,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -90,7 +99,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetname is nil")
+}
 
 
 
@@ -99,8 +112,14 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
-
+//if anotherPetName == nil {
+//    print("anotherPetname has no value")
+//}
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print ("anotherPetname has no value")
+}
 
 
 
@@ -114,8 +133,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
+let comitmentIssuesOptional: String?
+comitmentIssuesOptional = "yikes"
+//business as usual
 
 
 
@@ -125,8 +145,9 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
-
+let lonelyOptional: String? = nil
+lonelyOptional = "fail"
+// I already set it to nil therefore I should not be set anything to it
 
 
 
