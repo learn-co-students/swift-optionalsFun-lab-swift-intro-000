@@ -16,7 +16,7 @@ var pet = "turtle 🐢"
 
 
 
-
+// String
 
 
 /*: question2
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+// Optional
 
 
 
@@ -34,8 +34,7 @@ var petName: String?
  */
 
 
-
-
+// nil
 
 
 
@@ -45,7 +44,8 @@ var petName: String?
 // write your code here
 
 
-
+petName = "Joe"
+// Optional
 
 
 
@@ -56,7 +56,8 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
+// Optional("Joe")
 
 
 
@@ -67,8 +68,12 @@ var petName: String?
 // write your code here
 
 
-
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
+// Optional("Joe")
 
 
 
@@ -78,7 +83,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -90,7 +97,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,9 +112,12 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
+// The value of anotherPetName is nil
 
 
 
@@ -114,7 +128,10 @@ var anotherPetName: String?
 // write your code here
 
 
-
+let thirdPetName: String?
+thirdPetName = "Kitty"
+print(thirdPetName)
+// Optional("Kitty")
 
 
 
@@ -127,7 +144,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+let fourthPetName: String? = nil
+// fourthPetName = "Tiger"
+// Error from altering a constant
 
 
 
