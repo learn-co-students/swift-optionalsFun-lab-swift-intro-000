@@ -15,7 +15,7 @@
 var pet = "turtle 🐢"
 
 
-
+"String"
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+"Optional String"
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+"nil"
 
 
 
@@ -44,9 +44,9 @@ var petName: String?
  */
 // write your code here
 
+petName = "Carlos"
 
-
-
+"Optional String"
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,6 +66,11 @@ var petName: String?
  */
 // write your code here
 
+if  petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -77,7 +82,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let validName = petName {
+    print(validName)
+}
 
 
 
@@ -89,6 +96,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if anotherPetName == nil {
+    print("The value of anotherPet name is \(anotherPetName)")
+}
 
 
 
@@ -100,7 +110,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherValidName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -112,6 +126,10 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
+
+let myOptional: String?
+myOptional = "im here"
+print(myOptional)
 
 
 
@@ -126,6 +144,8 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherOptional: String? = nil
+anotherOptional = "Cool stuff"
 
 
 
