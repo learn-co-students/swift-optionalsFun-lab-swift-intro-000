@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// pet is of type String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// Optional String
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+// nil
 
 
 
@@ -45,9 +45,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Audrey"
 
-
-
+// petName is an Optional String still
 
 
 /*: question5
@@ -55,7 +55,9 @@ var petName: String?
  */
 // write your code here
 
+// Expect to see Optional('Audrey")
 
+print("My pet is named \(petName)")
 
 
 
@@ -67,7 +69,13 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil{
+    
+    print("\(petName)")
+} else{
+    
+    print("there is not pet name")
+}
 
 
 
@@ -77,7 +85,13 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    
+    print("My pet is named \(petName)")
+} else{
+    
+    print("I do not have a pet!")
+}
 
 
 
@@ -90,7 +104,13 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName != nil{
+    
+    print("The value of anotherPetName is \(anotherPetName)")
+} else{
+    
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,7 +121,13 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if let name = anotherPetName{
+    
+    print(name)
+} else {
+    
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,6 +139,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+
+let best: String?
+
+best = "Taylor Swift"
+
+print(best)
 
 
 
@@ -127,7 +159,10 @@ var anotherPetName: String?
 // write your code here
 
 
+let otherBest: String? = nil
 
+otherBest = "Daisy Ridley"
+print(otherBest)
 
 
 
