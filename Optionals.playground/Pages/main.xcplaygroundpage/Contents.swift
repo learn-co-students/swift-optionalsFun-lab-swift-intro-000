@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+print(type(of: pet))
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+print(type(of: petName))
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+print(petName)
 
 
 
@@ -44,8 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
-
+petName = "MyPet"
+print(type(of: petName))
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,7 +66,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +81,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let name = petName {
+    print(name)
+}
 
 
 
@@ -89,7 +95,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,10 +108,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
-
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+} else {
+    print(anotherPetName!)
+}
 
 
 
@@ -113,8 +122,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let constString: String?
+constString = "Hello"
 
 
 
@@ -126,8 +135,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let constString2: String? = nil
+// constString = "Hello" <= error
 
 
 
