@@ -43,6 +43,7 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
+petName = "Rio"
 
 
 
@@ -54,7 +55,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -65,7 +66,12 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if let a = petName {
+    print(a)
+}
+else {
+    print("There is no pet name.")
+}
 
 
 
@@ -76,7 +82,9 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let a = petName {
+    print(a)
+}
 
 
 
@@ -88,6 +96,9 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
