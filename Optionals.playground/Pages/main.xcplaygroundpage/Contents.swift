@@ -14,8 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
-
+//String
 
 
 
@@ -24,7 +23,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//Optional(String)
 
 
 
@@ -33,7 +32,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//nil
 
 
 
@@ -44,7 +43,9 @@ var petName: String?
  */
 // write your code here
 
+petName = "Jackson"
 
+//Optional(String)
 
 
 
@@ -55,7 +56,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
+//Optional, so should print Optional("Jackson")
 
 
 
@@ -66,7 +69,11 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,7 +84,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +98,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +111,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,9 +128,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let constant: String?
+constant = "Booya"
 
-
-
+print(constant)
 
 
 
@@ -126,8 +142,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let tomfoolery: String? = nil
+//tomfoolery = "Yessir"
+//Can't assign, since it's a constant and was explicitly assigned as nil
 
 
 
