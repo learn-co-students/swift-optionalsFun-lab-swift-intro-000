@@ -32,6 +32,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
+print(petName)
 
 
 
@@ -43,7 +44,7 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
+petName = "Klaus"
 
 
 
@@ -55,6 +56,7 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
 
 
@@ -67,7 +69,11 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("there is no pet name")
+}
 
 
 
@@ -77,7 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
