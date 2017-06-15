@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//'pet' is a variable of type 'String'
 
 
 
@@ -23,7 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
+//'petName' is a variable of type 'String?' which is an 'optional String'
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+//'petName' has the value 'nil'
 
 
 
@@ -44,7 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Milo the Puppy"
+//the type of 'petName' is still 'optional String'
 
 
 
@@ -54,7 +55,8 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
+//you should see Optional("Milo the Puppy") in the console
 
 
 
@@ -65,8 +67,13 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
+if(petName == nil){
+    print("There is no pet name.")
+}else{
+    print(petName)
+}
 
-
+//you should see Optional("Milo the Puppy") in the console
 
 
 
@@ -77,7 +84,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName{
+    print(petName)
+}
 
 
 
@@ -89,7 +98,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,7 +110,11 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}else{
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,8 +128,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let myPetName: String?
+myPetName = "Sparkles 🐩"
+print(myPetName)
 
 
 
@@ -127,7 +143,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+let somePet: String? = nil
+somePet = "kitten 🐈"
+//there is error in second line, because the constant 'somePet' is not suppose to assign to a new value after it has been assign to nil
 
 
 
