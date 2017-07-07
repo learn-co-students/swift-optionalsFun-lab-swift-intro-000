@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Frisco"
 
 
 
@@ -56,7 +56,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName!)
 
 
 
@@ -65,6 +65,12 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
+
+if petName != nil {
+    print("\(petName)")
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,6 +83,10 @@ var petName: String?
  */
 // write your code here
 
+if let petName = petName {
+    print("\(petName)")
+}
+
 
 
 
@@ -87,7 +97,12 @@ var petName: String?
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
  */
 var anotherPetName: String?
-// write your code here
+
+if anotherPetName != nil {
+    print("not nil")
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
