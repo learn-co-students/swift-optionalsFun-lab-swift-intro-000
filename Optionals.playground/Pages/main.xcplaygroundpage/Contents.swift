@@ -15,7 +15,7 @@
 var pet = "turtle 🐢"
 
 
-
+//String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//String?
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+//nil
 
 
 
@@ -46,8 +46,8 @@ var petName: String?
 
 
 
-
-
+petName = "Daisy"
+//String?
 
 
 /*: question5
@@ -56,7 +56,8 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
+//expect to see optional("Daisy")
 
 
 
@@ -67,8 +68,12 @@ var petName: String?
 // write your code here
 
 
-
-
+if petName != nil {
+    print("\(petName) is a nice pet!")
+} else if petName == nil {
+    print("There is no pet name")
+}
+// expect to see petName statement
 
 
 
@@ -79,7 +84,9 @@ var petName: String?
 
 
 
-
+if let petName = petName {
+    print("\(petName)")
+}
 
 
 
@@ -91,6 +98,10 @@ var anotherPetName: String?
 
 
 
+    if anotherPetName == nil {
+        
+    print("The value of anotherPetName is \(anotherPetName)")
+}
 
 
 
@@ -99,10 +110,16 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
+// expect to see "anotherPetName has no value" as it is equal to nil
 
-
-
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else if anotherPetName != nil {
+    if let anotherPetName = anotherPetName {
+    
+    print("\(anotherPetName)")
+}
+}
 
 
 
@@ -113,11 +130,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+let newOptional: String?
+newOptional = "Sally"
+print("\(newOptional)")
 
 
-
-
-
+// the optional is not unwrapped
 
 
 
@@ -127,9 +145,10 @@ var anotherPetName: String?
 // write your code here
 
 
+let anotherConstantOptional: String? = nil
+//anotherConstantOptional = "Jessica"
 
-
-
+// cannot assign new string as anotherConstantOptional is a let
 
 
 
