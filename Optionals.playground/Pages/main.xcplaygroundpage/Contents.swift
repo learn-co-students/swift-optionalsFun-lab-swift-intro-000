@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+print("\(String(describing: pet))")
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+print("\(String(describing: petName))")
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName="Doggy"
 
 
 
@@ -57,7 +57,7 @@ var petName: String?
 
 
 
-
+print("\(String(describing: petName))")
 
 
 
@@ -68,7 +68,8 @@ var petName: String?
 
 
 
-
+if petName != nil{
+print("\(String(describing: petName))")}
 
 
 
@@ -78,7 +79,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petName = petName {
+print("\(String(describing: petName))")
+}
 
 
 
@@ -90,7 +93,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil{
+print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,6 +106,13 @@ var anotherPetName: String?
 // write your code here
 
 
+
+if anotherPetName == nil{
+    print("anotherPetName has no value")
+}
+else{
+print("\(String(describing: anotherPetName))")
+}
 
 
 
@@ -115,8 +127,9 @@ var anotherPetName: String?
 
 
 
-
-
+let tests: String?
+tests = " aah"
+print("\(tests)")
 
 
 
@@ -126,8 +139,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let sets : String? = nil
 
-
+sets = "asd"
 
 
 
