@@ -14,6 +14,7 @@
  */
 var pet = "turtle 🐢"
 
+//pet is a string
 
 
 
@@ -24,7 +25,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//petName is a optional string
 
 
 
@@ -34,7 +35,7 @@ var petName: String?
  */
 
 
-
+//petname is nil
 
 
 
@@ -45,6 +46,8 @@ var petName: String?
 // write your code here
 
 
+petName = "Ricky"
+// type is still optional string, although you assign a value to it, it still is an optional string
 
 
 
@@ -56,7 +59,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
 
 
 
@@ -67,7 +70,12 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil{
+    print(petName)
+}
+else{
+    print("there is no pet name")
+}
 
 
 
@@ -78,7 +86,9 @@ var petName: String?
 // write your code here
 
 
-
+if let petName = petName{
+    print(petName)
+}
 
 
 
@@ -90,7 +100,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,7 +113,12 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}
+else{
+     print("anotherPetName has no value")
+}
 
 
 
@@ -113,8 +130,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let a_constant : String?
+a_constant = "Rex"
 
-
+print(a_constant)
 
 
 
@@ -126,11 +145,13 @@ var anotherPetName: String?
  */
 // write your code here
 
+let another_constant: String? = nil
+//another_constant = "Pinky"
+
+print(another_constant)
 
 
-
-
-
+//you cannot change the value of a constant after its been assigned
 
 
 
