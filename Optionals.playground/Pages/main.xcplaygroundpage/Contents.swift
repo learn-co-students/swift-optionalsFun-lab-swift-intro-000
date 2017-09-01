@@ -14,6 +14,8 @@
  */
 var pet = "turtle 🐢"
 
+// pet is a Variable of String type//
+
 
 
 
@@ -24,7 +26,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//petName is a Optional Variable//
 
 
 
@@ -33,7 +35,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//petName has the value nil//
 
 
 
@@ -44,8 +46,11 @@ var petName: String?
  */
 // write your code here
 
+petName = "turtle 🐢"
 
+print(petName)
 
+// petName is still "String" type  (optional String), eventhough we assigned the value it retains its type //
 
 
 
@@ -55,6 +60,7 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
 
 
@@ -67,7 +73,11 @@ var petName: String?
 // write your code here
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -76,6 +86,13 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
+
+
+if let friendsPet = petName {
+
+    print("Friend's pet Name is \(friendsPet)")
+    
+}
 
 
 
@@ -89,7 +106,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print ("The value of anotherPetName is nil")
+}
 
 
 
@@ -102,7 +121,11 @@ var anotherPetName: String?
 
 
 
-
+if let name = anotherPetName {
+    print(name)
+} else {
+    print ("anotherPetName has no value")
+}
 
 
 
@@ -113,6 +136,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let newPetName: String?
+
+newPetName = "Nemo"
+
+print(newPetName)
 
 
 
@@ -126,7 +154,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherNewPetName: String? = nil
 
+anotherNewPetName = "Dori"
 
 
 
