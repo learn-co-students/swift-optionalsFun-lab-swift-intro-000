@@ -14,7 +14,9 @@
  */
 var pet = "turtle 🐢"
 
-
+if( pet is String){
+    print (pet)
+}
 
 
 
@@ -24,7 +26,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//Optional
 
 
 
@@ -34,7 +36,7 @@ var petName: String?
  */
 
 
-
+print(petName)
 
 
 
@@ -45,7 +47,7 @@ var petName: String?
 // write your code here
 
 
-
+petName = "pete"
 
 
 
@@ -54,10 +56,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
-
-
-
+print(petName)
 
 
 
@@ -67,8 +66,11 @@ var petName: String?
 // write your code here
 
 
-
-
+if petName != nil {
+    print("My friend's pet is \(petName)")
+} else {
+    print("My friend doesn't have a pet :(")
+}
 
 
 
@@ -77,8 +79,9 @@ var petName: String?
  */
 // write your code here
 
-
-
+if let petName = petName {
+    print("My friend's pet is \(petName)")
+}
 
 
 
@@ -89,7 +92,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if(anotherPetName == nil){
+    print ("The value of anotherPetName is nil")
+}
 
 
 
@@ -103,9 +108,11 @@ var anotherPetName: String?
 
 
 
-
-
-
+if let name = anotherPetName {
+    print(name)
+} else {
+    print("anotherPetName is has no value")
+}
 
 
 /*: question10
@@ -113,8 +120,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let myPetName: String?
+myPetName = "woof"
+print(myPetName)
 
 
 
@@ -126,8 +134,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let myPetNamem: String?
+myPetNamem = "Sparkles 🐩"
+print(myPetNamem)
 
 
 
