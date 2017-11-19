@@ -14,8 +14,8 @@
  */
 var pet = "turtle 🐢"
 
-
-
+//pet is of type string
+print("String")
 
 
 
@@ -24,8 +24,8 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
-
+// petName is of type optional String
+print("optional String")
 
 
 
@@ -33,8 +33,8 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
-
+// current value of petName is nil
+print("nil")
 
 
 
@@ -44,8 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
-
+petName = "Toot the Turtle"
+// petName is of type optional String
 
 
 
@@ -55,6 +55,9 @@ var petName: String?
  */
 // write your code here
 
+
+print(petName)
+// i expect to see the petsName
 
 
 
@@ -66,7 +69,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName == nil {
+    print("There is no pet name")
+}else {
+    print(petName)
+}
 
 
 
@@ -77,7 +84,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -90,7 +99,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,7 +110,11 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
+if let name = anotherPetName {
+     print(anotherPetName)
+} else {
+   print("anotherPetName has no value")
+}
 
 
 
@@ -112,7 +127,9 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
-
+let dogName: String?
+dogName = "Fiddo"
+print(dogName)
 
 
 
@@ -125,7 +142,9 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
+let myBankAccountBalance: String? = nil
+myBankAccountBalance = "100,000"
+print(myBankAccountBalance)
 
 
 
