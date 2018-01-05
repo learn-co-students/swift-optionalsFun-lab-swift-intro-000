@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+// a String
 
 
 
@@ -23,7 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
+// a String? (a String optional)
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//nil
 
 
 
@@ -44,7 +44,8 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Scooter"
+// an optional String
 
 
 
@@ -54,7 +55,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -65,7 +66,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if let petName = petName {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -88,6 +93,11 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
+if let anotherPetName = anotherPetName {
+    print("The value of anotherPetName is \(anotherPetName)")
+} else {
+    print("The value of anotherPetName is \(anotherPetName)")
+}
 
 
 
@@ -99,7 +109,11 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
-
+if let anotherPetName = anotherPetName {
+    print("The value of anotherPetName is \(anotherPetName)")
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,7 +127,8 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let testing: String?
+testing = "testing"
 
 
 
@@ -125,7 +140,8 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
+let testing2: String? = nil
+testing2 = "testing"
 
 
 
