@@ -14,39 +14,27 @@
  */
 var pet = "turtle 🐢"
 
-
-
-
+//It is a String
+print(pet)
 
 
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
-
-
-
-
+//It is an Optional string
 
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
-
-
-
-
-
+//Current value is nil
 
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
-
-
-
+petName = "Rosie"
+//It is still an optional string.
 
 
 
@@ -55,32 +43,30 @@ var petName: String?
  */
 // write your code here
 
-
-
-
-
-
+//Expect to see Optional("Rosie")
+print(petName)
 
 /*: question6
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
 
-
-
-
-
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 /*: question7
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
 
-
-
-
-
+if let petName = petName {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 /*: question8
@@ -89,10 +75,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
-
-
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 /*: question9
@@ -100,13 +87,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
-
-
-
-
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 /*: question10
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
@@ -114,10 +99,10 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
-
-
+let flowerName : String?
+flowerName = "Lily"
+//flowerName = "Rose"
+//You can set the first value for the optional string but it's immutable afterwards.
 
 
 
@@ -126,11 +111,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
-
-
-
+let bookName : String? = nil
+//bookName = "Call Me By Your Name"
+//It cannot be changed from nil
 
 
 
