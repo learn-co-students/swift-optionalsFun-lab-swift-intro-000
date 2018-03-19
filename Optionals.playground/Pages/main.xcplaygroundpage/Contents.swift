@@ -13,7 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
+// string
 
 
 
@@ -23,7 +23,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
+// optional String
 
 
 
@@ -32,7 +32,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+// nil
 
 
 
@@ -43,8 +43,8 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
-
+petName = "poppy"
+// optional String
 
 
 
@@ -54,7 +54,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -65,7 +65,11 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
-
+if petName == nil {
+    print("There is no pet name.")
+} else {
+    print(petName)
+}
 
 
 
@@ -77,7 +81,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -88,7 +94,11 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+} else {
+    print(anotherPetName!)
+}
 
 
 
@@ -100,7 +110,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherName = anotherPetName {
+    print(anotherName)
+} else {
+    print("anotherPetName has not value")
+}
 
 
 
@@ -112,10 +126,11 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
-
-
-
-
+let newOptionalString: String?
+newOptionalString = "A"
+// it works
+newOptionalString = "B"
+// and this doesn't work
 
 
 
@@ -125,7 +140,9 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
-
+let anotherOptioalString: String? = nil
+anotherOptioalString = "B"
+// it doesn't work
 
 
 
