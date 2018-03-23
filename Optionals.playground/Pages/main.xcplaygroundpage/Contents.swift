@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//A String with type inference
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// a optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//the current value of petName is nil
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "No Friend"
 
 
 
@@ -55,9 +55,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
-
-
+//Optional(petName)
 
 
 
@@ -66,7 +66,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no friend")
+}
 
 
 
@@ -77,7 +81,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let name = petName {
+    print(name)
+}
 
 
 
@@ -89,7 +95,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -101,7 +109,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if let name = anotherPetName {
+    print(name)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,10 +125,13 @@ var anotherPetName: String?
  */
 // write your code here
 
+let cos: String?
 
+cos = "sad"
 
+print(cos)
 
-
+//optional value
 
 
 
@@ -127,10 +142,10 @@ var anotherPetName: String?
 // write your code here
 
 
+let anothercos: String? = nil
 
-
-
-
+// anothercos = "anothernil"
+// can't reassign constant
 
 
 
