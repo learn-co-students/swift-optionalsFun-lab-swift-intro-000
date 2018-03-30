@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// type is String.
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// type is Optional String.
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// the current value is nil.
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+ petName = "Snoopy"
 
 
 
@@ -55,8 +55,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
-
+// I expect to see an Optional warning.
 
 
 
@@ -66,7 +67,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 
@@ -77,9 +82,9 @@ var petName: String?
  */
 // write your code here
 
-
-
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +94,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName != nil {
+    print("the value of anotherPetName is \(anotherPetName)")
+} else {
+    print("The value of anotherPetName is nil.")
+}
 
 
 
@@ -100,11 +109,13 @@ var anotherPetName: String?
  */
 // write your code here
 
+if let name = anotherPetName {
+    print(name)
+} else {
+    print("anotherPetName has no value.")
+}
 
-
-
-
-
+// expect to see anotherPetName has no value since nothing has been defined yet.
 
 
 
@@ -113,11 +124,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let randomConstant: String?
+randomConstant = "Stanley"
+print(randomConstant)
 
-
-
-
-
+// randomConstant is an Optional.
 
 
 
@@ -126,7 +137,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let secondRandomConstant: String? = nil
+secondRandomConstant = "PLUR"
 
+// it still stays nil because secondRandomConstant is a constant.
 
 
 
