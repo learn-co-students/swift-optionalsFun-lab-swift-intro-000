@@ -14,6 +14,8 @@
  */
 var pet = "turtle 🐢"
 
+//String
+
 
 
 
@@ -24,7 +26,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//Optional String
 
 
 
@@ -33,7 +35,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// nil
 
 
 
@@ -43,7 +45,7 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
+petName = "Puppers"
 
 
 
@@ -55,7 +57,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,7 +68,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print("Hello \(petName)")
+} else {
+    print("No name")
+}
 
 
 
@@ -77,7 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -88,7 +96,9 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -102,7 +112,11 @@ var anotherPetName: String?
 
 
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("has no value")
+}
 
 
 
@@ -113,7 +127,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let keyWord : String?
+keyWord = "Bob"
+print(keyWord)
 
 
 
@@ -127,7 +143,8 @@ var anotherPetName: String?
 // write your code here
 
 
-
+let newName : String? = nil
+newName = "Bob"
 
 
 
