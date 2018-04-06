@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// Ans: String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// Ans: Optionals
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+//Ans: nil
 
 
 
@@ -46,7 +46,7 @@ var petName: String?
 
 
 
-
+//
 
 
 
