@@ -15,7 +15,7 @@
 var pet = "turtle 🐢"
 
 
-
+//String
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+//Optional
 
 
 
@@ -35,7 +35,7 @@ var petName: String?
 
 
 
-
+//nil
 
 
 
@@ -45,7 +45,9 @@ var petName: String?
 // write your code here
 
 
+petName = "Loki"
 
+//type still optional
 
 
 
@@ -56,7 +58,7 @@ var petName: String?
 // write your code here
 
 
-
+print(petName)
 
 
 
@@ -68,7 +70,11 @@ var petName: String?
 
 
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -79,7 +85,11 @@ var petName: String?
 
 
 
-
+if let petName = petName {
+    print(petName)
+} else {
+    print ("no pet name")
+}
 
 
 
@@ -90,7 +100,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if anotherPetName == nil {
+    print(anotherPetName)
+}
 
 
 
@@ -100,7 +112,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -116,7 +132,9 @@ var anotherPetName: String?
 
 
 
-
+let drink: String?
+drink = "Iced chocolate"
+print(drink)
 
 
 
@@ -127,6 +145,10 @@ var anotherPetName: String?
 // write your code here
 
 
+let cake: String? = nil
+cake = "Opera Slice"
+
+//an optional constant is still a constant and the value therefore cannot be changed
 
 
 
