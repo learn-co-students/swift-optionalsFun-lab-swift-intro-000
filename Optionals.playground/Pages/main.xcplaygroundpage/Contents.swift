@@ -7,12 +7,12 @@
  
  * [Optionals](https://github.com/learn-co-curriculum/swift-optionals-readme)
  
-
+ 
  */
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet = "turtle 🐢" //String, as it does not have the '?' at the end
 
 
 
@@ -22,7 +22,7 @@ var pet = "turtle 🐢"
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
-var petName: String?
+var petName: String? //optional, we have the '?' at the end
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//none, it is nil, optional
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Mozzarella" //it is still an optional, with value Optional(Mozzarella)
 
 
 
@@ -55,8 +55,9 @@ var petName: String?
  */
 // write your code here
 
+//expected to see Optional("Mozzarella")
 
-
+print(petName)
 
 
 
@@ -66,8 +67,13 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
-
+//optional value is still not unwrapped, thus we expect to see still Optional("petname")
 
 
 
@@ -77,8 +83,11 @@ var petName: String?
  */
 // write your code here
 
+if let petName = petName {
+    print(petName)
+}
 
-
+//if let checks if first the value exists (is not nil) and set it equal to a constant, then unwraps it
 
 
 
@@ -87,23 +96,24 @@ var petName: String?
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
  */
 var anotherPetName: String?
-// write your code here
 
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
-
-
-
+//not sure if this is the corrct answear
 
 
 /*: question9
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
-// write your code here
-
-
-
-
-
+if anotherPetName != nil {
+    print(anotherPetName) //unwrapped value, will be printed as Optional("anotherPetName")
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -111,10 +121,11 @@ var anotherPetName: String?
 /*: question10
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
-// write your code here
-
-
-
+let myBoyfriendName: String?
+myBoyfriendName = "Tony"
+// myBoyfriendName = "Kawhi"  //this is not possible, we already declared Tony as a constant bf, sorry Kawhi
+print(myBoyfriendName)
+//optional constatnt can be overwritten once after declaring as an empty optional
 
 
 
@@ -124,7 +135,11 @@ var anotherPetName: String?
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
-// write your code here
+
+let bestPlane: String?
+bestPlane = nil
+
+// bestPlane = "Iskra" //unable to overwrite a constant declared as nil. A nil stays a nil
 
 
 
