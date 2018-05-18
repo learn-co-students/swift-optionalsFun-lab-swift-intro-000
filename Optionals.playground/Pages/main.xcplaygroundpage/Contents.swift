@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+//Nil
 
 
 
@@ -44,9 +44,9 @@ var petName: String?
  */
 // write your code here
 
+petName = "Splash"
 
-
-
+//Still optional
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -66,7 +66,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+}else {
+    print("There  is no pet name.")
+}
 
 
 
@@ -76,7 +80,9 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let name = petName {
+    print(name)
+}
 
 
 
@@ -89,7 +95,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is \(anotherPetName)")
+}
 
 
 
@@ -100,7 +108,13 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else {
+    if let name = anotherPetName {
+        print(name)
+    }
+}
 
 
 
@@ -113,9 +127,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let hope: String?
 
+hope = "Yo"
 
-
+print(hope)
 
 
 
@@ -126,8 +142,7 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+let faith: String? = nil
 
 
 
