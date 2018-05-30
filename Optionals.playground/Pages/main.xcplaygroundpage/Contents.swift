@@ -13,6 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
+//String
 
 
 
@@ -23,6 +24,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
+//String?
 
 
 
@@ -32,7 +34,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+//nil
 
 
 
@@ -43,8 +45,8 @@ var petName: String?
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
-
-
+petName = "Larry"
+//Still an Optional String
 
 
 
@@ -55,9 +57,9 @@ var petName: String?
  */
 // write your code here
 
+print (petName)
 
-
-
+// I still see an optional string.
 
 
 
@@ -66,7 +68,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName == nil {
+    print ("There is no pet name")
+}else{
+    print ("my pet's name is \(petName)")
+}
 
 
 
@@ -77,7 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print ("my Pet's name is \(petName)")
+}
 
 
 
@@ -87,7 +95,7 @@ var petName: String?
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
  */
 var anotherPetName: String?
-// write your code here
+print ("The value of anotherPetName is \(anotherPetName)")
 
 
 
@@ -100,7 +108,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherPetName = anotherPetName {
+    print (anotherPetName)
+}else{
+    print ("anotherPetName has no value")
+}
 
 
 
@@ -112,10 +124,11 @@ var anotherPetName: String?
  ### 10. Declare a _constant_ optional string (using the `let` keyword). Then try to assign a string value to it on the next line. Print out the constant. What happens?
  */
 // write your code here
+//let anotherOptional = String!
+//anotherOptional = "Dairy"
+//print (anotherOptional)
 
-
-
-
+//I get an error message?
 
 
 
@@ -126,6 +139,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let wordsToExpress = String!
+wordsToExpress = nil
+wordsToExpress = "Trump"
 
 
 
