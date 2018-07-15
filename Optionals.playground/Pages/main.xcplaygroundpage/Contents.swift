@@ -14,6 +14,8 @@
  */
 var pet = "turtle 🐢"
 
+print(pet)
+print(type(of: pet))
 
 
 
@@ -33,7 +35,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+print(petName)
 
 
 
@@ -44,7 +46,9 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Lili"
+print(petName)
+print(type(of: petName))
 
 
 
@@ -66,6 +70,14 @@ var petName: String?
  */
 // write your code here
 
+if let petName = petName {
+    print(petName)
+}
+
+if petName == nil {
+    print("there is no pet name")
+}
+
 
 
 
@@ -77,7 +89,7 @@ var petName: String?
  */
 // write your code here
 
-
+// as above
 
 
 
@@ -89,6 +101,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -99,6 +114,14 @@ var anotherPetName: String?
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
 // write your code here
+
+//anotherPetName = "Fred"
+
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value **")
+}
 
 
 
@@ -114,8 +137,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
+let myOptional: String?
+myOptional = "Erin"
+print(myOptional)
 
 
 
@@ -125,6 +149,11 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
+
+let myOptional2: String?
+myOptional2 = nil
+print(myOptional2)
+//myOptional2 = "Hello"
 
 
 
