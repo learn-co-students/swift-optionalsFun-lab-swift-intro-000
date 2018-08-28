@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//String
 
 
 
@@ -24,6 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
+//Optional String
 
 
 
@@ -34,7 +35,7 @@ var petName: String?
  */
 
 
-
+//nil
 
 
 
@@ -45,7 +46,8 @@ var petName: String?
 // write your code here
 
 
-
+petName = "Steve"
+//Optional
 
 
 
@@ -55,7 +57,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName!)
 
+//Optional("Steve")
 
 
 
@@ -66,9 +70,13 @@ var petName: String?
  */
 // write your code here
 
+if(petName != nil){
+    print(petName!)
+} else {
+    print("There is no pet name.")
+}
 
-
-
+//"Steve"
 
 
 
@@ -78,8 +86,17 @@ var petName: String?
 // write your code here
 
 
+if let petName = petName {
+    print(petName)
+} else {
+    print("No pet name")
+}
+// I didnt use guard here becuase its not inside a function.
 
-
+// This is what the gaurd statement should look like.
+// guard let petName = petName != nil else{
+//     return
+// }
 
 
 
@@ -91,8 +108,9 @@ var anotherPetName: String?
 
 
 
-
-
+if anotherPetName == nil{
+    print("The value of anotherPetName is nil")
+}
 
 
 /*: question9
@@ -100,7 +118,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if let anotherPetName = anotherPetName{
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -114,7 +136,13 @@ var anotherPetName: String?
 // write your code here
 
 
+let test: String?
 
+test = "This String"
+
+print(test!)
+
+//The constant is now set
 
 
 
@@ -126,8 +154,13 @@ var anotherPetName: String?
  */
 // write your code here
 
+let newTest: String?
 
+newTest = nil
 
+newTest = "Update"
+
+// Since there is no value assigned to the optional from the get go you can assign a value to a constant one time. After that, that constaint is stored as the first value
 
 
 
