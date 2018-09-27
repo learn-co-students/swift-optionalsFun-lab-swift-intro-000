@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+//type of the variable `pet` is String
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+//type of the variable `petName` is String? (optional)
 
 
 
@@ -34,7 +34,7 @@ var petName: String?
  */
 
 
-
+//nil
 
 
 
@@ -44,9 +44,9 @@ var petName: String?
  */
 // write your code here
 
+petName = "dovie"
 
-
-
+//type of the variable is still optional String
 
 
 
@@ -55,7 +55,9 @@ var petName: String?
  */
 // write your code here
 
+print(petName)
 
+//because petName was optional i was expected to see Optional("dovie"), as it appears in the console.
 
 
 
@@ -66,9 +68,13 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
-
-
+//i expected to see the same result as for the previous exercise: Optional("dovie")
 
 
 
@@ -77,9 +83,9 @@ var petName: String?
  */
 // write your code here
 
-
-
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -89,7 +95,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+} else {
+    print(anotherPetName)
+}
 
 
 
@@ -100,9 +110,13 @@ var anotherPetName: String?
  */
 // write your code here
 
+if let aPetName = anotherPetName {
+    print(aPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
-
-
+//because the variable 'anotherPetName' was nil, I was expected to see the message "anotherPetName has no value"
 
 
 
@@ -113,8 +127,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let food: String?
+food = "pizza"
+print(food)
 
-
+//the food constant is optional, so that it is not unwrapped - Optional("pizza")
 
 
 
@@ -126,8 +143,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let dessert: String? = nil
+//dessert = "yummi stuff"
+//print(dessert)
 
-
+//a warning message appears: Cannot assign to value: 'dessert' is a 'let' constant. It was already initialized with a nil value.
 
 
 
