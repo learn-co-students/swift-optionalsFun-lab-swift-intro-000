@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// Striing
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// optional string
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// nil
 
 
 
@@ -44,9 +44,9 @@ var petName: String?
  */
 // write your code here
 
+petName = "Roger"
 
-
-
+// String
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -67,6 +67,14 @@ var petName: String?
 // write your code here
 
 
+if petName != nil
+{
+    print(petName!)
+}
+else
+{
+    print("There is no pet name")
+}
 
 
 
@@ -77,7 +85,10 @@ var petName: String?
  */
 // write your code here
 
-
+if let pName = petName
+{
+    print(pName)
+}
 
 
 
@@ -89,7 +100,10 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName == nil
+{
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,8 +114,14 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+if let pName = anotherPetName
+{
+    print(pName)
+}
+else
+{
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,7 +133,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let optStr: String?
 
+optStr = "hello"
+
+print(optStr)
 
 
 
@@ -125,6 +149,10 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
+
+let testOpt2: String? = nil
+
+testOpt2 = "hello"
 
 
 
